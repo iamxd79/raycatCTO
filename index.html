@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="The RayCat Museum — a private collection proving RayCat has always been here." />
+  <title>The RayCat Museum</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23100f16'/%3E%3Cpath d='M16 48V16h22c8 0 12 4 12 10s-4 10-12 10H25M37 36l13 12' fill='none' stroke='%236bd8df' stroke-width='6'/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="museum-shell">
+    <section class="hero" id="entrance" aria-label="Museum entrance">
+      <div class="hero-sky"></div><div class="hero-mansion"></div><div class="hero-trees"></div>
+      <div class="hero-copy"><p class="eyebrow">Private collection · Est. long before memory</p><h1>The RayCat<br><em>Museum</em></h1><p class="lede">He's always been here.</p><button class="enter-button" id="enterButton">Enter the museum <span>↗</span></button></div>
+      <div class="moon"></div><div class="hero-caption">Open nightly · if you know where to look</div>
+    </section>
+
+    <section class="interior" id="museum" aria-label="Museum interior">
+      <header class="museum-nav"><a class="wordmark" href="#entrance">RAYCAT <span>MUSEUM</span></a><div class="nav-status"><i></i> Collection open <button id="soundButton" aria-label="Toggle ambience">Sound on</button></div></header>
+      <div class="welcome"><p class="eyebrow">The private collection</p><h2>Welcome home.</h2><p>Walk slowly. The house has been keeping records.</p></div>
+      <div class="hall-scene"><div class="hall-window"></div><div class="hall-stairs"></div><div class="hall-portrait portrait-a"></div><div class="hall-portrait portrait-b"></div><div class="hall-lamp lamp-a"></div><div class="hall-lamp lamp-b"></div><div class="cat-guide" aria-label="RayCat guide"><span class="ear e1"></span><span class="ear e2"></span><span class="cat-head"><b></b><b></b></span><span class="cat-scarf"></span></div><div class="hall-floor"></div></div>
+      <div class="room-grid" id="rooms"></div>
+    </section>
+  </main>
+  <template id="roomTemplate"><article class="room-card"><div class="room-image"></div><div class="room-info"><span class="room-index"></span><h3></h3><p></p><button class="room-open">Explore room <span>↗</span></button></div></article></template>
+  <script src="app.js"></script>
+</body>
+</html>
