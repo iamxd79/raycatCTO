@@ -1,0 +1,65 @@
+/* Homepage layout tokens. The immersive Museum keeps its viewport-based layout. */
+#top{--content:1280px;--gutter:clamp(20px,4vw,64px);--inset:max(var(--gutter),calc((100% - var(--content))/2));--section-space:clamp(56px,6vw,96px);--paper:#e8e0cf;--quiet:#b5aea1;--edge:#a68c632b;background:#090c10}
+#top>header{padding-inline:var(--inset)}
+#top>.section{padding:var(--section-space) var(--inset);border-top:1px solid var(--edge);min-height:0}
+#top>.hero{padding-inline:var(--inset)}
+#top>.section h2{font-size:clamp(34px,4.4vw,64px);line-height:1.02;letter-spacing:-.05em;margin:12px 0 28px}
+#top .eyebrow{line-height:1.5;margin:0 0 12px;font-size:12px}
+#top .section-top{margin-bottom:28px}
+#top .section-top h2{margin-bottom:0}
+#top>.raycat-terminal{background:#0b0f14}
+#top>.lore{background:#121416}
+#top>.rewards{background:#0e1217}
+#top>.flywheel-feature{background:radial-gradient(ellipse at 15% 50%,#8e70460a,transparent 65%),#121416}
+#top>.museum-teaser{background:#0d131b}
+#top>.community{background:#12161b}
+#top>.final{background:radial-gradient(ellipse at bottom,#19212c66,transparent 75%),#0b0f14}
+#top>.split,#top>.museum-teaser{gap:clamp(32px,5vw,72px);grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+#top .split p:not(.eyebrow),#top .museum-teaser p:not(.eyebrow){font-size:16px;line-height:1.8;color:var(--quiet)}
+#top .portrait{height:auto;aspect-ratio:1;max-width:520px;width:100%;justify-self:end;border-width:8px}
+#top .museum-art img{display:block;width:100%;max-width:560px}
+#top .flywheel-heading,#top .flywheel-layout,#top .flywheel-disclaimer{max-width:none}
+#top .flywheel-heading{margin-bottom:32px}
+#top .flywheel-layout{gap:clamp(32px,5vw,72px)}
+#top .steps{display:grid;grid-template-columns:1fr auto 1fr auto 1fr;gap:28px;margin:36px 0 28px;align-items:start;justify-content:stretch}
+#top .step{max-width:none;border-top:1px solid var(--edge);padding-top:20px}
+#top .step p{font-size:15px}
+#top .path{padding-top:24px}
+#top .fine{font-size:14px;line-height:1.8;color:var(--quiet)}
+#top>.community,#top>.final{text-align:center}
+#top>.community h2,#top>.final h2{max-width:900px;margin-inline:auto}
+#top>footer{padding:28px var(--inset);background:#090c10;gap:20px;font-size:13px;line-height:1.7}
+#top .button{font-size:12px;min-height:44px}
+#top nav{font-size:13px;gap:24px}
+#top .terminal-shell{max-width:none;margin:0;border:1px solid #a48c6345;border-radius:12px;overflow:hidden;background:linear-gradient(140deg,#151e28,#0e141b 65%);box-shadow:0 20px 50px #0003,inset 0 1px #fff04}
+#top .terminal-bar{padding:20px 28px;background:#ffffff03;align-items:center}
+#top .terminal-bar b{display:flex;align-items:center;gap:12px;font-size:16px}
+#top .terminal-bar [role=status]{border:1px solid #a68c6338;padding:6px 10px;border-radius:4px;font-size:12px;color:#c3bbad}
+#top .terminal-shell h3{display:flex;gap:10px;align-items:center;font-size:13px;padding:24px 28px 12px;color:#cbb895}
+#top .terminal-shell h3 svg{color:#ac936d;stroke-width:1.5;flex-shrink:0}
+#top .terminal-market{padding:0 16px 24px;gap:0}
+#top .terminal-market .terminal-cell+.terminal-cell{border-left:1px solid var(--edge)}
+#top .terminal-cell{padding:10px 12px}
+#top .terminal-cell>span{font-size:12px;letter-spacing:.04em;font-weight:500}
+#top .terminal-cell small{font-size:12px;line-height:1.6;color:#ada99f;margin-top:5px}
+#top .terminal-cell strong{font-size:clamp(24px,2.2vw,34px);letter-spacing:-.045em;line-height:1.35;margin-top:8px}
+#top .terminal-lower{grid-template-columns:1.2fr 1fr}
+#top .terminal-rewards,#top .terminal-flywheel{padding:0 16px 24px}
+#top .terminal-lower h3{padding-left:12px}
+#top .terminal-rewards>.terminal-cell strong{font-size:clamp(42px,4.3vw,60px);color:#65d2d7}
+#top .terminal-rewards>.terminal-cell small{max-width:380px}
+#top .terminal-summary{font-size:14px;line-height:1.7;margin:8px 0 20px}
+#top .terminal-yield{border-top:1px solid var(--edge);padding-top:12px;margin:0 12px;gap:20px}
+#top .terminal-yield .terminal-cell{padding-inline:0}
+#top .terminal-yield strong{font-size:27px}
+#top .terminal-status{font-size:22px;padding:10px 12px 20px;line-height:1.4;color:#c6d6c8}
+#top .terminal-status small{font-size:12px;letter-spacing:.025em;line-height:1.5}
+#top .terminal-flywheel>.terminal-cell{padding-bottom:24px}
+#top .terminal-shell details{font-size:13px;padding-top:18px}
+#top .terminal-shell summary{min-height:32px}
+#top .terminal-footer{padding:20px 28px;background:#090e1499;gap:12px 24px;font-size:12px;line-height:1.6}
+#top .terminal-footer small{font-size:12px;line-height:1.7;width:auto}
+@media(max-width:1050px){#top .terminal-market{grid-template-columns:repeat(3,minmax(0,1fr));row-gap:20px}#top .terminal-market .terminal-cell:nth-child(4){border-left:0}#top nav{gap:14px}#top .terminal-lower{grid-template-columns:1fr 1fr}}
+@media(max-width:800px){#top>.split,#top>.museum-teaser{grid-template-columns:1fr}#top .portrait{justify-self:center;max-width:460px}#top .museum-art{max-width:520px;justify-self:center}#top .steps{grid-template-columns:1fr;gap:20px}#top .path{display:none}#top .terminal-lower{grid-template-columns:1fr}#top .terminal-rewards{border-right:0;border-bottom:1px solid var(--edge)}#top>.hero{min-height:820px}#top .flywheel-heading h2{margin-top:12px}}
+@media(max-width:600px){#top .terminal-market{grid-template-columns:1fr 1fr;padding:0 8px 20px;gap:18px 0}#top .terminal-market .terminal-cell{border-left:0}#top .terminal-market .terminal-cell:last-child{grid-row:1;grid-column:2;border-left:1px solid var(--edge)}#top .terminal-market .terminal-cell:nth-child(3){border-left:1px solid var(--edge)}#top .terminal-bar{padding:16px 20px}#top .terminal-shell h3{padding:20px 20px 10px}#top .terminal-lower h3{padding-left:12px}#top .terminal-rewards,#top .terminal-flywheel{padding-inline:8px}#top .terminal-cell strong{font-size:23px}#top .terminal-footer{padding:18px 20px;gap:10px 18px}#top .terminal-yield{gap:16px}#top .terminal-summary{font-size:13px}#top .terminal-bar [role=status]{font-size:10px}#top .terminal-shell{border-radius:8px}#top .hero-copy .contract{font-size:11px}}
+@media(prefers-reduced-motion:reduce){#top *{scroll-behavior:auto}#top .button{transition:none}}

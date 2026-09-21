@@ -1,1 +1,2 @@
-export default function Museum(){return <main className="museum-placeholder"><p className="eyebrow">THE RAYCAT MUSEUM</p><h1>He's always<br/>been here.</h1><p>COMING SOON</p><a href="/">BACK HOME</a></main>}
+import Museum from "../../components/museum/Museum";
+export default function MuseumPage(){return <Museum/>;}

@@ -1,0 +1,1 @@
+const fs=require('fs');const p='components/museum/Museum.tsx';let s=fs.readFileSync(p,'utf8');s=s.replace('{guide&&focus.guide&&<RayCatDialogue','{guide&&dialogue?.id===focus.id&&focus.guide&&<RayCatDialogue');fs.writeFileSync(p,s);

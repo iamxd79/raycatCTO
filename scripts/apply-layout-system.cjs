@@ -1,0 +1,3 @@
+const fs=require('fs');
+let p='app/layout.tsx',s=fs.readFileSync(p,'utf8');if(!s.includes('./layout-system.css'))s+='\nimport "./layout-system.css";\n';fs.writeFileSync(p,s);
+p='components/dashboard/Dashboard.tsx';s=fs.readFileSync(p,'utf8');s=s.replace("import {useEffect,useState}","import {ChartNoAxesCombined,Wallet,RefreshCw} from 'lucide-react';\nimport {useEffect,useState}");s=s.replace('<h3>MARKET</h3>','<h3><ChartNoAxesCombined size={17} aria-hidden="true"/>MARKET</h3>').replace('<h3>HOLDER REWARDS</h3>','<h3><Wallet size={17} aria-hidden="true"/>HOLDER REWARDS</h3>').replace('<h3>FLYWHEEL</h3>','<h3><RefreshCw size={17} aria-hidden="true"/>FLYWHEEL</h3>');fs.writeFileSync(p,s);

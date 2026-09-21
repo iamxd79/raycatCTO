@@ -1,0 +1,4 @@
+import * as THREE from 'three';
+export function agedSurface(color:string,metalness=0){
+ const canvas=document.createElement('canvas');canvas.width=canvas.height=512;const ctx=canvas.getContext('2d')!;ctx.fillStyle=color;ctx.fillRect(0,0,512,512);let seed=173;const random=()=>{seed=(seed*16807)%2147483647;return seed/2147483647;};for(let i=0;i<2200;i++){ctx.fillStyle=`rgba(${random()>.5?'255,245,225':'0,0,0'},${random()*.05})`;ctx.fillRect(random()*512,random()*512,random()*3+1,random()*2+1);}ctx.strokeStyle='#00000022';ctx.lineWidth=1;for(let y=0;y<512;y+=128){ctx.beginPath();ctx.moveTo(0,y);ctx.lineTo(512,y);ctx.stroke();}const tex=new THREE.CanvasTexture(canvas);tex.wrapS=tex.wrapT=THREE.RepeatWrapping;tex.colorSpace=THREE.SRGBColorSpace;tex.repeat.set(3,3);tex.anisotropy=4;return new THREE.MeshStandardMaterial({map:tex,roughness:.93,metalness});
+}

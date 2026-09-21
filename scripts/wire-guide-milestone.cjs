@@ -1,0 +1,20 @@
+const fs=require('fs');
+let p='data/museumArtworks.json',entries=JSON.parse(fs.readFileSync(p,'utf8'));for(const a of entries){a.guideLevel=a.id==='001'?'featured':'silent';if(a.id==='001')a.guide={story:'They called it rent.\nI preferred recurring income.',triggerRadius:7,guideAnchor:[-4,0,-8],lookAt:[-7,4,-11.65]};}fs.writeFileSync(p,JSON.stringify(entries,null,2)+'\n');
+p='components/museum/Museum.tsx';let s=fs.readFileSync(p,'utf8');s="import RayCatDialogue from './RayCatDialogue';\nimport './guide.css';\n"+s;
+// Keep the client directive first.
+s=s.replace("'use client';",'');s="'use client';\n"+s;
+s=s.replace(" const [viewVersion", " const [guide,setGuide]=useState(true),[dialogue,setDialogue]=useState<Artwork|null>(null);const spoken=useRef(new Set<string>());\n function tell(id:string){const art=artworks.find(a=>a.id===id);if(!guide||!art?.guide||spoken.current.has(id))return;spoken.current.add(id);setDialogue(art);}\n const [viewVersion");
+s=s.replace('const state:MuseumState={room,','const state:MuseumState={guide,room,');
+s=s.replace('function visit(id:string){','function visit(id:string){setDialogue(null);');
+s=s.replace("actions.current=(kind,id)=>{","actions.current=(kind,id)=>{if(kind==='guide')tell(id);if(kind==='guide-leave')setDialogue(null);");
+s=s.replace('[room,phase,mode,quality,reduced,focus,menu,page]','[room,phase,mode,quality,reduced,focus,menu,page,guide]');
+s=s.replace(" useEffect(()=>{if(phase==='approach')", " useEffect(()=>{if(ready&&phase==='outside'){const timer=setTimeout(()=>setPhase('approach'),reduced?100:650);return()=>clearTimeout(timer);}},[ready,phase,reduced]);\n useEffect(()=>{if(phase==='inside'){try{localStorage.setItem('raycat-intro-complete','1');}catch{}}},[phase]);\n useEffect(()=>{if(phase==='approach')");
+s=s.replace(/\{ready&&phase==='outside'&&<div className="museum-entry">[\s\S]*?<\/div>\}/,'');
+s=s.replace("(phase==='approach'||phase==='welcome')","(phase==='outside'||phase==='approach'||phase==='welcome')");s=s.replace('Skip entrance →','SKIP INTRO');
+s=s.replace('<span className="museum-spacer"/>',`<span className="museum-spacer"/>{phase==='inside'&&<button aria-pressed={guide} onClick={()=>{setGuide(v=>!v);setDialogue(null);}}>GUIDE: {guide?'ON':'OFF'}</button>}`);
+s=s.replace('{notice&&<p',`{dialogue&&guide&&!menu&&!focus&&<RayCatDialogue key={dialogue.id} text={dialogue.guide!.story} reduced={reduced} onClose={()=>setDialogue(null)}/>}\n   {notice&&<p`);
+s=s.replace('onClick={()=>inspect(a)}><Image src={a.roomSrc}', 'onFocus={()=>tell(a.id)} onMouseEnter={()=>tell(a.id)} onMouseLeave={()=>setDialogue(null)} onClick={()=>inspect(a)}><Image src={a.roomSrc}');
+fs.writeFileSync(p,s);
+p='components/museum/model.ts';s=fs.readFileSync(p,'utf8').replace('MuseumState={room:', 'MuseumState={guide:boolean;room:');fs.writeFileSync(p,s);
+p='components/museum/engine.ts';s=fs.readFileSync(p,'utf8');s=s.replace(' function tick(now:number)'," let activeGuide='';\n function tick(now:number)");s=s.replace('renderer.render(scene,camera);',`if(!outdoor&&state.guide&&!state.focus){const hit=targets.find(o=>o.userData.kind==='art'&&artworks.find(a=>a.id===o.userData.id)?.guide&&o.getWorldPosition(new THREE.Vector3()).distanceTo(camera.position)<7);const id=hit?.userData.id||'';if(id!==activeGuide){activeGuide=id;onPick(id?'guide':'guide-leave',id);}}else if(activeGuide){activeGuide='';onPick('guide-leave','');}renderer.render(scene,camera);`);fs.writeFileSync(p,s);
+p='app/page.tsx';s=fs.readFileSync(p,'utf8');s=s.replace('<div className="museum-art"><Image','<a href="/museum" className="museum-art entrance-link" aria-label="Enter the RayCat Museum"><Image');s=s.replace('sizes="(max-width:800px) 90vw, 45vw"/></div><div><p className="eyebrow">THE RAYCAT MUSEUM','sizes="(max-width:800px) 90vw, 45vw"/></a><div><p className="eyebrow">THE RAYCAT MUSEUM');fs.writeFileSync(p,s);

@@ -1,0 +1,26 @@
+'use client';
+import {ChartNoAxesCombined,Wallet,RefreshCw} from 'lucide-react';
+import {useEffect,useState} from 'react';
+import type {LiveData} from '../../lib/stonkfun';
+import type {Analytics} from '../../lib/stonkboard';
+import {compact,usd,price,percent,valid} from '../../lib/dashboard-format';
+import {config} from '../../lib/config';
+import './dashboard.css';
+type Snapshot={official:LiveData;analytics:Analytics|null};
+function Cell({label,value,note}:{label:string;value:string;note?:string}){return <div className="terminal-cell"><span>{label}</span><strong>{value}</strong>{note&&<small>{note}</small>}</div>}
+export default function Dashboard({initial}:{initial:Snapshot}){
+ const [data,setData]=useState(initial),[updating,setUpdating]=useState(false),[failed,setFailed]=useState(false),[now,setNow]=useState<number|null>(null);
+ useEffect(()=>{let stopped=false;const controller=new AbortController();const refresh=async()=>{if(document.hidden)return;setUpdating(true);try{const response=await fetch('/api/dashboard',{signal:controller.signal});if(!response.ok)throw Error();const next:Snapshot=await response.json();if(stopped)return;setData(old=>({official:{...next.official,token:next.official.token??old.official.token,rewards:next.official.rewards??old.official.rewards,burns:next.official.burns??old.official.burns,fetchedAt:next.official.fetchedAt??old.official.fetchedAt},analytics:next.analytics??old.analytics}));setFailed(!!next.official.unavailable);}catch{if(!stopped)setFailed(true);}finally{if(!stopped)setUpdating(false);}};setNow(Date.now());const clock=setInterval(()=>setNow(Date.now()),30000);const timer=setInterval(refresh,90000);return()=>{stopped=true;controller.abort();clearInterval(timer);clearInterval(clock);};},[]);
+ const d=data.official,a=data.analytics,t=d.token,r=d.rewards,b=d.burns;
+ const age=now&&d.fetchedAt?now-Date.parse(d.fetchedAt):null;
+ const status=updating?'UPDATING':!t&&!r&&!b?'DATA UNAVAILABLE':failed||d.unavailable||age!==null&&age>300000?'STALE':'CURRENT';
+ const analyticsFresh=!!a?.observedAt&&(!now||now-Date.parse(a.observedAt)<3600000);
+ const total=valid(r?.distributedTokens)&&valid(a?.rayPrice)?r.distributedTokens*a.rayPrice:undefined;
+ return <section className="live section raycat-terminal" aria-labelledby="live-heading"><div className="section-top"><div><p className="eyebrow">RAYCAT LIVE</p><h2 id="live-heading">THE CAT IS WORKING.</h2></div></div><div className="terminal-shell" aria-busy={updating}>
+ <div className="terminal-bar"><b>$RAYCAT</b><span role="status">{status}</span></div>
+ <h3><ChartNoAxesCombined size={17} aria-hidden="true"/>MARKET</h3><div className="terminal-market"><Cell label="PRICE" value={price(t?.market?.priceUsd)}/><Cell label="MARKET CAP" value={usd(t?.market?.marketCapUsd)}/><Cell label="24H VOLUME" value={usd(t?.market?.volume24hUsd)}/><Cell label="HOLDERS" value={compact(a?.holders)} note={valid(a?.growth7d)?`${a.growth7d>0?'+':''}${compact(a.growth7d)} · 7D / Stonk Board`: 'Stonk Board'}/><Cell label="24H CHANGE" value={percent(t?.market?.priceChange24h,true)}/></div>
+ <div className="terminal-lower"><div className="terminal-rewards"><h3><Wallet size={17} aria-hidden="true"/>HOLDER REWARDS</h3><Cell label="TOTAL DISTRIBUTED" value={valid(total)?usd(total):valid(r?.distributedTokens)?compact(r.distributedTokens)+' RAY':'—'} note={valid(total)?'Valued at RAY price from analytics refresh—not historical USD':'RAY distributed'}/><p className="terminal-summary">{compact(r?.distributedTokens)} RAY <span>·</span> {compact(r?.payoutCount)} payments</p><div className="terminal-yield"><Cell label="7D MODELED APR*" value={percent(analyticsFresh?a?.apr7d:undefined)}/><Cell label="DAILY / $100*" value={usd(analyticsFresh&&valid(a?.apr7d)?a.apr7d/365:undefined)} note="modeled fee accrual"/></div><details><summary>Reward methodology & wallets paid</summary><p>*Stonk Board annualized transfer-fee model, not audited payouts. Daily estimate = APR ÷ 365 per $100. Rewards vary and are not guaranteed.</p><p>{a?.note}</p><p>Wallets paid: {compact(r?.holderCount)} — StonkFun reward recipients, not current holders.</p></details></div>
+ <div className="terminal-flywheel"><h3><RefreshCw size={17} aria-hidden="true"/>FLYWHEEL</h3><div className="terminal-status">{typeof t?.flywheel?.active==='boolean'?(t.flywheel.active?'ACTIVE':'NOT ACTIVE'):'—'}<small>OFFICIAL STONKFUN STATUS</small></div><Cell label="BOUGHT & BURNED" value={usd(b?.valueUsdAtBurn)} note="USD value recorded at burn"/><div className="terminal-yield"><Cell label="RAYCAT BURNED" value={compact(b?.amountTokens)}/><Cell label="BUYBACKS" value={compact(b?.burnCount)}/></div></div></div>
+ <footer className="terminal-footer"><span>{d.fetchedAt?`Official snapshot: ${new Date(d.fetchedAt).toISOString().slice(11,16)} UTC`:'Official data unavailable'}</span><a href={config.tokenUrl} target="_blank" rel="noreferrer">DATA: STONKFUN ↗</a><a href={`https://thestonkboard.com/coin/${config.mint}`} target="_blank" rel="noreferrer">ANALYTICS: THE STONK BOARD ↗</a><small>{a?.observedAt?`Analytics: ${new Date(a.observedAt).toISOString().slice(0,16).replace('T',' ')} UTC${analyticsFresh?'':' · STALE'}`:'Analytics unavailable'}{a?.priceAt?` · RAY valuation: ${new Date(a.priceAt).toISOString().slice(11,16)} UTC`:''}</small></footer>
+ </div></section>;
+}

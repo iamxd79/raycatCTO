@@ -1,0 +1,14 @@
+const fs=require('fs');let p='components/museum/Museum.tsx',s=fs.readFileSync(p,'utf8');
+s=s.replace("import Image from 'next/image';","import Image from 'next/image';\nimport Navigation from './Navigation';\nimport './navigation.css';");
+s=s.replace("const list=room===", "const [viewVersion,setViewVersion]=useState(0);\n const list=room===");
+s=s.replace("function visit(id:string){setRoom(id);", "function visit(id:string){setViewVersion(v=>v+1);setRoom(id);");
+s=s.replace("setFocus(art);setSeen", "setFocus(art);setPage(Math.floor(artworks.filter(a=>a.room===art.room).findIndex(a=>a.id===art.id)/6));setSeen");
+s=s.replace("}else setPage(p=>(p+delta+pages)%pages);", "}else {setViewVersion(v=>v+1);setPage(p=>Math.max(0,Math.min(p+delta,pages-1)));}");
+const begin=s.indexOf('   <div className="museum-bottom">'),end=s.indexOf('<p className="museum-hint">',begin);if(begin<0||end<0)throw Error('Navigation block missing');s=s.slice(0,begin)+`   <Navigation room={room} page={page} pages={pages} seen={seen.length} total={artworks.length} list={list} onRoom={visit} onWall={advance} onArt={inspect} onReset={()=>{engine.current?.reset();setNotice('VIEW RESET');}}/>`+s.slice(end);
+s=s.replace("return <main className=", "return <main className=");s=s.replace('<div className="museum-canvas"', '<div className="museum-transition" key={viewVersion} aria-hidden="true"/><div className="museum-canvas"');
+s=s.replace("{phase==='welcome'&&", "{(phase==='approach'||phase==='welcome')&&<button className=\"museum-skip\" onClick={()=>visit('hall')}>Skip entrance →</button>}{phase==='welcome'&&");
+s=s.replace('{menu&&<aside','{menu&&<button className="museum-panel-scrim" aria-label="Dismiss navigation" onClick={()=>setMenu(\'\')}/>}{menu&&<aside');
+s=s.replace("<label>QUALITY", "<label>NAVIGATION<select value={mode} onChange={e=>setMode(e.target.value)}><option value=\"guided\">Guided · scroll and tap</option><option value=\"explore\">Explore · WASD and drag</option></select></label><label>QUALITY");
+s=s.replace("'Scroll to approach · drag to look · select an artwork'", "'Choose a room below · scroll to approach · drag to look'");
+fs.writeFileSync(p,s);
+p='components/museum/engine.ts';s=fs.readFileSync(p,'utf8');s=s.replace("return {update(next:MuseumState)","return {reset(){walk=0;strafe=0;yaw=0;pitch=0;keys.clear();},update(next:MuseumState)");s=s.replace("const up=(e:PointerEvent)=>{drag=false;if(moved>8)return;", "const up=(e:PointerEvent)=>{const wasDragging=drag;drag=false;if(!wasDragging||state.focus||e.target!==renderer.domElement||moved>8)return;");s=s.replace("if((e.target as HTMLElement)?.matches('input,select,button'))return;", "if(state.focus||(e.target as HTMLElement)?.matches('input,select,button,a'))return;if(['ArrowUp','ArrowDown'].includes(e.key))e.preventDefault();");fs.writeFileSync(p,s);

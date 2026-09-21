@@ -1,0 +1,106 @@
+[
+  {
+    "name": "desktop",
+    "route": "/",
+    "images": [
+      {
+        "src": "http://localhost:3000/_next/image?url=%2Fimages%2Fraycat%2Fcanonical-corrected.webp&w=48&q=75",
+        "loaded": true,
+        "transform": "none"
+      },
+      {
+        "src": "http://localhost:3000/_next/image?url=%2Fimages%2Fbackgrounds%2Festate.webp&w=1920&q=75",
+        "loaded": true,
+        "transform": "none"
+      },
+      {
+        "src": "http://localhost:3000/_next/image?url=%2Fimages%2Fraycat%2Fcanonical-corrected.webp&w=384&q=75",
+        "loaded": true,
+        "transform": "matrix(0.999391, 0.0348995, -0.0348995, 0.999391, 0, 0)"
+      },
+      {
+        "src": "http://localhost:3000/_next/image?url=%2Fimages%2Fraycat%2Fcanonical-corrected.webp&w=640&q=75",
+        "loaded": true,
+        "transform": "none"
+      },
+      {
+        "src": "http://localhost:3000/_next/image?url=%2Fimage%2F07-the-flywheel.png&w=750&q=75",
+        "loaded": true,
+        "transform": "none"
+      },
+      {
+        "src": "http://localhost:3000/_next/image?url=%2Fimage%2F49-the-museum-of-raycat.png&w=750&q=75",
+        "loaded": true,
+        "transform": "matrix(0.99863, -0.052336, 0.052336, 0.99863, 0, 0)"
+      }
+    ]
+  },
+  {
+    "name": "desktop",
+    "route": "/museum",
+    "images": [
+      {
+        "src": "http://localhost:3000/_next/image?url=%2Fmuseum%2Fexterior.webp&w=1920&q=75",
+        "loaded": true,
+        "transform": "matrix(1.02, 0, 0, 1.02, 0, 0)"
+      }
+    ]
+  },
+  {
+    "name": "desktop",
+    "route": "/museum?room=old-world",
+    "images": []
+  },
+  {
+    "name": "mobile",
+    "route": "/",
+    "images": [
+      {
+        "src": "http://localhost:3000/_next/image?url=%2Fimages%2Fraycat%2Fcanonical-corrected.webp&w=48&q=75",
+        "loaded": true,
+        "transform": "none"
+      },
+      {
+        "src": "http://localhost:3000/_next/image?url=%2Fimages%2Fbackgrounds%2Festate.webp&w=640&q=75",
+        "loaded": true,
+        "transform": "none"
+      },
+      {
+        "src": "http://localhost:3000/_next/image?url=%2Fimages%2Fraycat%2Fcanonical-corrected.webp&w=384&q=75",
+        "loaded": true,
+        "transform": "matrix(0.999391, 0.0348995, -0.0348995, 0.999391, 0, 0)"
+      },
+      {
+        "src": "http://localhost:3000/_next/image?url=%2Fimages%2Fraycat%2Fcanonical-corrected.webp&w=384&q=75",
+        "loaded": true,
+        "transform": "none"
+      },
+      {
+        "src": "http://localhost:3000/_next/image?url=%2Fimage%2F07-the-flywheel.png&w=384&q=75",
+        "loaded": true,
+        "transform": "none"
+      },
+      {
+        "src": "http://localhost:3000/_next/image?url=%2Fimage%2F49-the-museum-of-raycat.png&w=384&q=75",
+        "loaded": true,
+        "transform": "matrix(0.99863, -0.052336, 0.052336, 0.99863, 0, 0)"
+      }
+    ]
+  },
+  {
+    "name": "mobile",
+    "route": "/museum",
+    "images": [
+      {
+        "src": "http://localhost:3000/_next/image?url=%2Fmuseum%2Fexterior.webp&w=640&q=75",
+        "loaded": true,
+        "transform": "matrix(1.02, 0, 0, 1.02, 0, 0)"
+      }
+    ]
+  },
+  {
+    "name": "mobile",
+    "route": "/museum?room=old-world",
+    "images": []
+  }
+]

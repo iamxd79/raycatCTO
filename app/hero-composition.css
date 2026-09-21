@@ -1,0 +1,7 @@
+/* Keep the copy and the character in the scene in one compact composition. */
+@media (min-width: 1100px) {
+  .hero { padding-left: clamp(64px, 11vw, 240px); }
+  .hero-copy { max-width: min(62vw, 1040px); }
+  .hero h1 { font-size: clamp(88px, 7.8vw, 150px); line-height: .94; }
+  .hero-background { object-position: right center; opacity: .46; }
+}
