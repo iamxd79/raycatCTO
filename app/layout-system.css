@@ -1,5 +1,5 @@
 /* Homepage layout tokens. The immersive Museum keeps its viewport-based layout. */
-#top{--content:1280px;--gutter:clamp(20px,4vw,64px);--inset:max(var(--gutter),calc((100% - var(--content))/2));--section-space:clamp(56px,6vw,96px);--paper:#e8e0cf;--quiet:#b5aea1;--edge:#a68c632b;background:#090c10}
+#top{--content:1280px;--gutter:clamp(20px,4vw,64px);--inset:max(var(--gutter),calc((100% - var(--content))/2));--section-space:clamp(56px,6vw,96px);--paper:#f5f8ff;--quiet:#aebbd2;--edge:#5367ff2b;background:#090c10}
 #top>header{padding-inline:var(--inset)}
 #top>.section{padding:var(--section-space) var(--inset);border-top:1px solid var(--edge);min-height:0}
 #top>.hero{padding-inline:var(--inset)}
@@ -8,9 +8,9 @@
 #top .section-top{margin-bottom:28px}
 #top .section-top h2{margin-bottom:0}
 #top>.raycat-terminal{background:#0b0f14}
-#top>.lore{background:#121416}
+#top>.lore{background:#0d1829}
 #top>.rewards{background:#0e1217}
-#top>.flywheel-feature{background:radial-gradient(ellipse at 15% 50%,#8e70460a,transparent 65%),#121416}
+#top>.flywheel-feature{background:radial-gradient(ellipse at 15% 50%,#273c670a,transparent 65%),#0d1829}
 #top>.museum-teaser{background:#0d131b}
 #top>.community{background:#12161b}
 #top>.final{background:radial-gradient(ellipse at bottom,#19212c66,transparent 75%),#0b0f14}
@@ -31,17 +31,17 @@
 #top>footer{padding:28px var(--inset);background:#090c10;gap:20px;font-size:13px;line-height:1.7}
 #top .button{font-size:12px;min-height:44px}
 #top nav{font-size:13px;gap:24px}
-#top .terminal-shell{max-width:none;margin:0;border:1px solid #a48c6345;border-radius:12px;overflow:hidden;background:linear-gradient(140deg,#151e28,#0e141b 65%);box-shadow:0 20px 50px #0003,inset 0 1px #fff04}
+#top .terminal-shell{max-width:none;margin:0;border:1px solid #5367ff45;border-radius:12px;overflow:hidden;background:linear-gradient(140deg,#151e28,#0e141b 65%);}
 #top .terminal-bar{padding:20px 28px;background:#ffffff03;align-items:center}
 #top .terminal-bar b{display:flex;align-items:center;gap:12px;font-size:16px}
-#top .terminal-bar [role=status]{border:1px solid #a68c6338;padding:6px 10px;border-radius:4px;font-size:12px;color:#c3bbad}
-#top .terminal-shell h3{display:flex;gap:10px;align-items:center;font-size:13px;padding:24px 28px 12px;color:#cbb895}
-#top .terminal-shell h3 svg{color:#ac936d;stroke-width:1.5;flex-shrink:0}
+#top .terminal-bar [role=status]{border:1px solid #5367ff38;padding:6px 10px;border-radius:4px;font-size:12px;color:#aebbd2}
+#top .terminal-shell h3{display:flex;gap:10px;align-items:center;font-size:13px;padding:24px 28px 12px;color:#f5f8ff}
+#top .terminal-shell h3 svg{color:#39d0d8;stroke-width:1.5;flex-shrink:0}
 #top .terminal-market{padding:0 16px 24px;gap:0}
 #top .terminal-market .terminal-cell+.terminal-cell{border-left:1px solid var(--edge)}
 #top .terminal-cell{padding:10px 12px}
 #top .terminal-cell>span{font-size:12px;letter-spacing:.04em;font-weight:500}
-#top .terminal-cell small{font-size:12px;line-height:1.6;color:#ada99f;margin-top:5px}
+#top .terminal-cell small{font-size:12px;line-height:1.6;color:#aebbd2;margin-top:5px}
 #top .terminal-cell strong{font-size:clamp(24px,2.2vw,34px);letter-spacing:-.045em;line-height:1.35;margin-top:8px}
 #top .terminal-lower{grid-template-columns:1.2fr 1fr}
 #top .terminal-rewards,#top .terminal-flywheel{padding:0 16px 24px}
@@ -52,14 +52,59 @@
 #top .terminal-yield{border-top:1px solid var(--edge);padding-top:12px;margin:0 12px;gap:20px}
 #top .terminal-yield .terminal-cell{padding-inline:0}
 #top .terminal-yield strong{font-size:27px}
-#top .terminal-status{font-size:22px;padding:10px 12px 20px;line-height:1.4;color:#c6d6c8}
+#top .terminal-status{font-size:22px;padding:10px 12px 20px;line-height:1.4;color:#d7e5ff}
 #top .terminal-status small{font-size:12px;letter-spacing:.025em;line-height:1.5}
 #top .terminal-flywheel>.terminal-cell{padding-bottom:24px}
 #top .terminal-shell details{font-size:13px;padding-top:18px}
 #top .terminal-shell summary{min-height:32px}
-#top .terminal-footer{padding:20px 28px;background:#090e1499;gap:12px 24px;font-size:12px;line-height:1.6}
+#top .terminal-footer{padding:20px 28px;background:#0a1424cc;gap:12px 24px;font-size:12px;line-height:1.6}
 #top .terminal-footer small{font-size:12px;line-height:1.7;width:auto}
 @media(max-width:1050px){#top .terminal-market{grid-template-columns:repeat(3,minmax(0,1fr));row-gap:20px}#top .terminal-market .terminal-cell:nth-child(4){border-left:0}#top nav{gap:14px}#top .terminal-lower{grid-template-columns:1fr 1fr}}
 @media(max-width:800px){#top>.split,#top>.museum-teaser{grid-template-columns:1fr}#top .portrait{justify-self:center;max-width:460px}#top .museum-art{max-width:520px;justify-self:center}#top .steps{grid-template-columns:1fr;gap:20px}#top .path{display:none}#top .terminal-lower{grid-template-columns:1fr}#top .terminal-rewards{border-right:0;border-bottom:1px solid var(--edge)}#top>.hero{min-height:820px}#top .flywheel-heading h2{margin-top:12px}}
 @media(max-width:600px){#top .terminal-market{grid-template-columns:1fr 1fr;padding:0 8px 20px;gap:18px 0}#top .terminal-market .terminal-cell{border-left:0}#top .terminal-market .terminal-cell:last-child{grid-row:1;grid-column:2;border-left:1px solid var(--edge)}#top .terminal-market .terminal-cell:nth-child(3){border-left:1px solid var(--edge)}#top .terminal-bar{padding:16px 20px}#top .terminal-shell h3{padding:20px 20px 10px}#top .terminal-lower h3{padding-left:12px}#top .terminal-rewards,#top .terminal-flywheel{padding-inline:8px}#top .terminal-cell strong{font-size:23px}#top .terminal-footer{padding:18px 20px;gap:10px 18px}#top .terminal-yield{gap:16px}#top .terminal-summary{font-size:13px}#top .terminal-bar [role=status]{font-size:10px}#top .terminal-shell{border-radius:8px}#top .hero-copy .contract{font-size:11px}}
 @media(prefers-reduced-motion:reduce){#top *{scroll-behavior:auto}#top .button{transition:none}}
+
+#top>.museum-teaser{position:relative;isolation:isolate;overflow:hidden;background:radial-gradient(circle at 78% 42%,#182d52 0,#0d192b 34%,#080d17 72%);border-top:1px solid #5367ff55;border-bottom:1px solid #39d0d833;min-height:660px;align-items:center}
+#top>.museum-teaser:before{content:"MUSEUM / 049";position:absolute;top:34px;right:var(--inset);color:#7d9cff;font-size:10px;letter-spacing:.18em}
+#top>.museum-teaser:after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,transparent 0 48%,#2d8cff12 49%,transparent 50%),repeating-linear-gradient(0deg,transparent 0 5px,#39d0d80a 6px 7px);pointer-events:none}
+#top>.museum-teaser .museum-art{position:relative;transform:rotate(-2deg);border:1px solid #5367ff99;background:#0b1424;padding:10px;transition:transform .25s,border-color .25s}
+#top>.museum-teaser .museum-art:hover,#top>.museum-teaser .museum-art:focus-visible{transform:rotate(0deg) translateY(-5px);border-color:#39d0d8}
+#top>.museum-teaser .museum-art img{display:block;width:100%;border:0;transform:none;filter:saturate(.86) contrast(1.08)}
+#top>.museum-teaser .museum-frame-label{display:block;padding:7px 4px 10px;color:#aebbd2;font-size:10px;letter-spacing:.14em}
+#top>.museum-teaser .museum-scanline{position:absolute;left:10px;right:10px;top:54%;height:1px;background:#39d0d888;opacity:.75}
+#top>.museum-teaser .museum-portal-copy{position:relative}
+#top>.museum-teaser .museum-portal-copy:before{content:"↗  ENTER A LIVING ARCHIVE";display:block;margin-bottom:20px;color:#39d0d8;font-size:10px;letter-spacing:.18em}
+#top>.museum-teaser h2{margin-top:12px;font-size:clamp(54px,7vw,104px);line-height:.84}
+#top>.museum-teaser h2 em{color:#39d0d8}
+#top>.museum-teaser .museum-lede{max-width:420px;font-size:18px;color:#d7e5ff}
+#top>.museum-teaser .museum-index{display:flex;gap:22px;margin:28px 0;color:#91a2bf;font-size:10px;letter-spacing:.12em}
+#top>.museum-teaser .museum-index span{display:flex;flex-direction:column;gap:5px;border-left:1px solid #5367ff66;padding-left:10px}
+#top>.museum-teaser .museum-index b{font-size:22px;color:#f5f8ff;letter-spacing:-.03em}
+#top>.museum-teaser .museum-cta{background:linear-gradient(90deg,#39d0d8,#2d8cff 55%,#8c5cf5);color:#070d17;border:0}
+#top>.museum-teaser .museum-cta-note{margin-top:14px;font-size:10px;letter-spacing:.12em;color:#7d9cff}
+#top>.museum-teaser .museum-live-dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:#39d0d8;margin-left:8px;vertical-align:middle}
+@media(max-width:800px){#top>.museum-teaser{min-height:0;padding-top:100px}#top>.museum-teaser:before{top:22px;right:24px}#top>.museum-teaser .museum-index{gap:12px}#top>.museum-teaser .museum-lede{font-size:15px}}
+
+/* Pure Raydium surfaces: solid backgrounds, no translucent section fills. */
+html,body{background:#070d17}
+#top{background:#070d17}
+#top header,#top .site-nav{background:#08101c}
+#top>.hero{background:#0b1220}
+#top>.raycat-terminal{background:#070d17}
+#top>.split{background:#0d1829}
+#top>.reward-steps{background:#0b1220}
+#top>.flywheel-feature{background:#101d32}
+#top>.museum-teaser{background:#0d1b2d}
+#top>.community{background:#0b1220}
+#top>.final{background:#10233d}
+#top footer{background:#070d17}
+#top .button{background:#2d8cff}
+#top .button.ghost{background:#0b1220}
+
+/* Dashboard icon and stroke correction */
+#top .terminal-shell{border-color:#5367ff55;background:#0d1829}
+#top .terminal-shell h3{color:#f5f8ff}
+#top .terminal-shell h3 svg{color:#39d0d8;stroke:#39d0d8}
+#top .terminal-bar [role=status]{color:#7d9cff;border-color:#5367ff66}
+#top .terminal-cell>span,#top .terminal-cell small{color:#aebbd2}
+#top .terminal-footer{background:#0b1220}

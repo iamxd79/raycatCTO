@@ -16,8 +16,8 @@
     "aspectRatio": 1,
     "order": 1,
     "featured": true,
-    "duplicateOf": null,
     "guideLevel": "featured",
+    "duplicateOf": null,
     "guide": {
       "story": "They called it rent.\nI preferred recurring income.",
       "triggerRadius": 10,
@@ -31,7 +31,8 @@
         4,
         -11
       ]
-    }
+    },
+    "focusSrc": "/museum/focus/1.webp"
   },
   {
     "id": "002",
@@ -50,8 +51,8 @@
     "aspectRatio": 1,
     "order": 2,
     "featured": false,
-    "duplicateOf": null,
     "guideLevel": "featured",
+    "duplicateOf": null,
     "guide": {
       "story": "The vault was smaller then.\nSo were my expenses.",
       "triggerRadius": 10,
@@ -65,7 +66,8 @@
         4,
         -11
       ]
-    }
+    },
+    "focusSrc": "/museum/focus/2.webp"
   },
   {
     "id": "003",
@@ -84,8 +86,9 @@
     "aspectRatio": 1,
     "order": 3,
     "featured": false,
+    "guideLevel": "silent",
     "duplicateOf": null,
-    "guideLevel": "silent"
+    "focusSrc": "/museum/focus/3.webp"
   },
   {
     "id": "004",
@@ -104,8 +107,9 @@
     "aspectRatio": 1,
     "order": 4,
     "featured": false,
+    "guideLevel": "silent",
     "duplicateOf": null,
-    "guideLevel": "silent"
+    "focusSrc": "/museum/focus/4.webp"
   },
   {
     "id": "005",
@@ -124,8 +128,9 @@
     "aspectRatio": 1,
     "order": 5,
     "featured": false,
+    "guideLevel": "silent",
     "duplicateOf": null,
-    "guideLevel": "silent"
+    "focusSrc": "/museum/focus/5.webp"
   },
   {
     "id": "006",
@@ -144,8 +149,9 @@
     "aspectRatio": 1,
     "order": 6,
     "featured": false,
+    "guideLevel": "silent",
     "duplicateOf": null,
-    "guideLevel": "silent"
+    "focusSrc": "/museum/focus/6.webp"
   },
   {
     "id": "007",
@@ -164,8 +170,8 @@
     "aspectRatio": 1,
     "order": 7,
     "featured": false,
-    "duplicateOf": null,
     "guideLevel": "featured",
+    "duplicateOf": null,
     "guide": {
       "story": "It has been turning for years.\nI rarely interrupt it.",
       "triggerRadius": 10,
@@ -179,7 +185,8 @@
         4,
         -11
       ]
-    }
+    },
+    "focusSrc": "/museum/focus/7.webp"
   },
   {
     "id": "008",
@@ -198,8 +205,8 @@
     "aspectRatio": 1,
     "order": 8,
     "featured": true,
-    "duplicateOf": null,
     "guideLevel": "featured",
+    "duplicateOf": null,
     "guide": {
       "story": "A very long trip.\nNo decent chairs.",
       "triggerRadius": 10,
@@ -213,7 +220,8 @@
         4,
         -7
       ]
-    }
+    },
+    "focusSrc": "/museum/focus/8.webp"
   },
   {
     "id": "009",
@@ -232,8 +240,9 @@
     "aspectRatio": 1,
     "order": 9,
     "featured": false,
+    "guideLevel": "silent",
     "duplicateOf": null,
-    "guideLevel": "silent"
+    "focusSrc": "/museum/focus/9.webp"
   },
   {
     "id": "010",
@@ -252,8 +261,9 @@
     "aspectRatio": 1,
     "order": 10,
     "featured": false,
+    "guideLevel": "silent",
     "duplicateOf": null,
-    "guideLevel": "silent"
+    "focusSrc": "/museum/focus/10.webp"
   },
   {
     "id": "011",
@@ -272,8 +282,9 @@
     "aspectRatio": 1,
     "order": 11,
     "featured": false,
+    "guideLevel": "silent",
     "duplicateOf": null,
-    "guideLevel": "silent"
+    "focusSrc": "/museum/focus/11.webp"
   },
   {
     "id": "012",
@@ -292,8 +303,9 @@
     "aspectRatio": 1,
     "order": 12,
     "featured": false,
+    "guideLevel": "silent",
     "duplicateOf": null,
-    "guideLevel": "silent"
+    "focusSrc": "/museum/focus/12.webp"
   },
   {
     "id": "013",
@@ -312,8 +324,9 @@
     "aspectRatio": 1,
     "order": 13,
     "featured": false,
+    "guideLevel": "silent",
     "duplicateOf": null,
-    "guideLevel": "silent"
+    "focusSrc": "/museum/focus/13.webp"
   },
   {
     "id": "014",
@@ -332,8 +345,9 @@
     "aspectRatio": 1,
     "order": 14,
     "featured": false,
+    "guideLevel": "silent",
     "duplicateOf": null,
-    "guideLevel": "silent"
+    "focusSrc": "/museum/focus/14.webp"
   },
   {
     "id": "015",
@@ -352,8 +366,9 @@
     "aspectRatio": 1,
     "order": 15,
     "featured": false,
+    "guideLevel": "silent",
     "duplicateOf": null,
-    "guideLevel": "silent"
+    "focusSrc": "/museum/focus/15.webp"
   },
   {
     "id": "016",
@@ -372,8 +387,9 @@
     "aspectRatio": 1,
     "order": 16,
     "featured": true,
+    "guideLevel": "silent",
     "duplicateOf": null,
-    "guideLevel": "silent"
+    "focusSrc": "/museum/focus/16.webp"
   },
   {
     "id": "017",
@@ -392,8 +408,9 @@
     "aspectRatio": 1,
     "order": 17,
     "featured": false,
+    "guideLevel": "silent",
     "duplicateOf": null,
-    "guideLevel": "silent"
+    "focusSrc": "/museum/focus/17.webp"
   },
   {
     "id": "018",
@@ -412,8 +429,9 @@
     "aspectRatio": 1.3333333333333333,
     "order": 18,
     "featured": false,
+    "guideLevel": "silent",
     "duplicateOf": null,
-    "guideLevel": "silent"
+    "focusSrc": "/museum/focus/18.webp"
   },
   {
     "id": "019",
@@ -432,8 +450,9 @@
     "aspectRatio": 1,
     "order": 19,
     "featured": false,
+    "guideLevel": "silent",
     "duplicateOf": null,
-    "guideLevel": "silent"
+    "focusSrc": "/museum/focus/19.webp"
   },
   {
     "id": "020",
@@ -452,8 +471,9 @@
     "aspectRatio": 1,
     "order": 20,
     "featured": true,
+    "guideLevel": "silent",
     "duplicateOf": null,
-    "guideLevel": "silent"
+    "focusSrc": "/museum/focus/20.webp"
   },
   {
     "id": "021",
@@ -472,8 +492,9 @@
     "aspectRatio": 1,
     "order": 21,
     "featured": false,
+    "guideLevel": "silent",
     "duplicateOf": null,
-    "guideLevel": "silent"
+    "focusSrc": "/museum/focus/21.webp"
   },
   {
     "id": "022",
@@ -492,8 +513,9 @@
     "aspectRatio": 1,
     "order": 22,
     "featured": false,
+    "guideLevel": "silent",
     "duplicateOf": null,
-    "guideLevel": "silent"
+    "focusSrc": "/museum/focus/22.webp"
   },
   {
     "id": "023",
@@ -512,8 +534,9 @@
     "aspectRatio": 1,
     "order": 23,
     "featured": false,
+    "guideLevel": "silent",
     "duplicateOf": null,
-    "guideLevel": "silent"
+    "focusSrc": "/museum/focus/23.webp"
   },
   {
     "id": "024",
@@ -532,8 +555,9 @@
     "aspectRatio": 1,
     "order": 24,
     "featured": false,
+    "guideLevel": "silent",
     "duplicateOf": null,
-    "guideLevel": "silent"
+    "focusSrc": "/museum/focus/24.webp"
   },
   {
     "id": "025",
@@ -552,8 +576,9 @@
     "aspectRatio": 1,
     "order": 25,
     "featured": false,
+    "guideLevel": "silent",
     "duplicateOf": null,
-    "guideLevel": "silent"
+    "focusSrc": "/museum/focus/25.webp"
   },
   {
     "id": "026",
@@ -572,8 +597,9 @@
     "aspectRatio": 1,
     "order": 26,
     "featured": false,
+    "guideLevel": "silent",
     "duplicateOf": null,
-    "guideLevel": "silent"
+    "focusSrc": "/museum/focus/26.webp"
   },
   {
     "id": "027",
@@ -592,8 +618,9 @@
     "aspectRatio": 1,
     "order": 27,
     "featured": false,
+    "guideLevel": "silent",
     "duplicateOf": null,
-    "guideLevel": "silent"
+    "focusSrc": "/museum/focus/27.webp"
   },
   {
     "id": "028",
@@ -612,8 +639,9 @@
     "aspectRatio": 1,
     "order": 28,
     "featured": false,
+    "guideLevel": "silent",
     "duplicateOf": null,
-    "guideLevel": "silent"
+    "focusSrc": "/museum/focus/28.webp"
   },
   {
     "id": "029",
@@ -632,8 +660,9 @@
     "aspectRatio": 1,
     "order": 29,
     "featured": false,
+    "guideLevel": "silent",
     "duplicateOf": null,
-    "guideLevel": "silent"
+    "focusSrc": "/museum/focus/29.webp"
   },
   {
     "id": "030",
@@ -652,8 +681,9 @@
     "aspectRatio": 1,
     "order": 30,
     "featured": false,
+    "guideLevel": "silent",
     "duplicateOf": null,
-    "guideLevel": "silent"
+    "focusSrc": "/museum/focus/30.webp"
   },
   {
     "id": "031",
@@ -672,8 +702,9 @@
     "aspectRatio": 1,
     "order": 31,
     "featured": false,
+    "guideLevel": "silent",
     "duplicateOf": null,
-    "guideLevel": "silent"
+    "focusSrc": "/museum/focus/31.webp"
   },
   {
     "id": "032",
@@ -692,8 +723,9 @@
     "aspectRatio": 1,
     "order": 32,
     "featured": false,
+    "guideLevel": "silent",
     "duplicateOf": null,
-    "guideLevel": "silent"
+    "focusSrc": "/museum/focus/32.webp"
   },
   {
     "id": "033",
@@ -712,8 +744,9 @@
     "aspectRatio": 1,
     "order": 33,
     "featured": false,
+    "guideLevel": "silent",
     "duplicateOf": null,
-    "guideLevel": "silent"
+    "focusSrc": "/museum/focus/33.webp"
   },
   {
     "id": "034",
@@ -732,8 +765,9 @@
     "aspectRatio": 1,
     "order": 34,
     "featured": false,
+    "guideLevel": "silent",
     "duplicateOf": null,
-    "guideLevel": "silent"
+    "focusSrc": "/museum/focus/34.webp"
   },
   {
     "id": "035",
@@ -752,8 +786,9 @@
     "aspectRatio": 1,
     "order": 35,
     "featured": false,
+    "guideLevel": "silent",
     "duplicateOf": null,
-    "guideLevel": "silent"
+    "focusSrc": "/museum/focus/35.webp"
   },
   {
     "id": "036",
@@ -772,8 +807,9 @@
     "aspectRatio": 1,
     "order": 36,
     "featured": false,
+    "guideLevel": "silent",
     "duplicateOf": null,
-    "guideLevel": "silent"
+    "focusSrc": "/museum/focus/36.webp"
   },
   {
     "id": "037",
@@ -792,8 +828,9 @@
     "aspectRatio": 1,
     "order": 37,
     "featured": false,
+    "guideLevel": "silent",
     "duplicateOf": null,
-    "guideLevel": "silent"
+    "focusSrc": "/museum/focus/37.webp"
   },
   {
     "id": "038",
@@ -812,8 +849,9 @@
     "aspectRatio": 1,
     "order": 38,
     "featured": false,
+    "guideLevel": "silent",
     "duplicateOf": null,
-    "guideLevel": "silent"
+    "focusSrc": "/museum/focus/38.webp"
   },
   {
     "id": "039",
@@ -832,8 +870,9 @@
     "aspectRatio": 1,
     "order": 39,
     "featured": false,
+    "guideLevel": "silent",
     "duplicateOf": null,
-    "guideLevel": "silent"
+    "focusSrc": "/museum/focus/39.webp"
   },
   {
     "id": "040",
@@ -852,8 +891,9 @@
     "aspectRatio": 1,
     "order": 40,
     "featured": false,
+    "guideLevel": "silent",
     "duplicateOf": null,
-    "guideLevel": "silent"
+    "focusSrc": "/museum/focus/40.webp"
   },
   {
     "id": "041",
@@ -872,8 +912,9 @@
     "aspectRatio": 1,
     "order": 41,
     "featured": false,
+    "guideLevel": "silent",
     "duplicateOf": null,
-    "guideLevel": "silent"
+    "focusSrc": "/museum/focus/41.webp"
   },
   {
     "id": "042",
@@ -892,8 +933,9 @@
     "aspectRatio": 1,
     "order": 42,
     "featured": false,
+    "guideLevel": "silent",
     "duplicateOf": null,
-    "guideLevel": "silent"
+    "focusSrc": "/museum/focus/42.webp"
   },
   {
     "id": "043",
@@ -912,8 +954,9 @@
     "aspectRatio": 0.6666666666666666,
     "order": 43,
     "featured": false,
+    "guideLevel": "silent",
     "duplicateOf": null,
-    "guideLevel": "silent"
+    "focusSrc": "/museum/focus/43.webp"
   },
   {
     "id": "044",
@@ -932,8 +975,9 @@
     "aspectRatio": 1,
     "order": 44,
     "featured": false,
+    "guideLevel": "silent",
     "duplicateOf": null,
-    "guideLevel": "silent"
+    "focusSrc": "/museum/focus/44.webp"
   },
   {
     "id": "045",
@@ -952,8 +996,9 @@
     "aspectRatio": 1,
     "order": 45,
     "featured": false,
+    "guideLevel": "silent",
     "duplicateOf": null,
-    "guideLevel": "silent"
+    "focusSrc": "/museum/focus/45.webp"
   },
   {
     "id": "046",
@@ -972,8 +1017,9 @@
     "aspectRatio": 1.3333333333333333,
     "order": 46,
     "featured": false,
+    "guideLevel": "silent",
     "duplicateOf": null,
-    "guideLevel": "silent"
+    "focusSrc": "/museum/focus/46.webp"
   },
   {
     "id": "047",
@@ -992,8 +1038,9 @@
     "aspectRatio": 1,
     "order": 47,
     "featured": false,
+    "guideLevel": "silent",
     "duplicateOf": null,
-    "guideLevel": "silent"
+    "focusSrc": "/museum/focus/47.webp"
   },
   {
     "id": "048",
@@ -1012,8 +1059,9 @@
     "aspectRatio": 1.3333333333333333,
     "order": 48,
     "featured": false,
+    "guideLevel": "silent",
     "duplicateOf": null,
-    "guideLevel": "silent"
+    "focusSrc": "/museum/focus/48.webp"
   },
   {
     "id": "049",
@@ -1032,8 +1080,8 @@
     "aspectRatio": 1,
     "order": 49,
     "featured": true,
-    "duplicateOf": null,
     "guideLevel": "featured",
+    "duplicateOf": null,
     "guide": {
       "story": "I kept the receipts.\nEventually, they needed a building.",
       "triggerRadius": 10,
@@ -1047,7 +1095,8 @@
         4,
         -11
       ]
-    }
+    },
+    "focusSrc": "/museum/focus/49.webp"
   },
   {
     "id": "050",
@@ -1066,8 +1115,9 @@
     "aspectRatio": 1,
     "order": 50,
     "featured": true,
+    "guideLevel": "silent",
     "duplicateOf": null,
-    "guideLevel": "silent"
+    "focusSrc": "/museum/focus/50.webp"
   },
   {
     "id": "051",
@@ -1086,8 +1136,9 @@
     "aspectRatio": 1,
     "order": 51,
     "featured": false,
+    "guideLevel": "silent",
     "duplicateOf": null,
-    "guideLevel": "silent"
+    "focusSrc": "/museum/focus/51.webp"
   },
   {
     "id": "052",
@@ -1106,8 +1157,9 @@
     "aspectRatio": 1,
     "order": 52,
     "featured": false,
+    "guideLevel": "silent",
     "duplicateOf": null,
-    "guideLevel": "silent"
+    "focusSrc": "/museum/focus/52.webp"
   },
   {
     "id": "053",
@@ -1126,8 +1178,9 @@
     "aspectRatio": 1,
     "order": 53,
     "featured": false,
+    "guideLevel": "silent",
     "duplicateOf": null,
-    "guideLevel": "silent"
+    "focusSrc": "/museum/focus/53.webp"
   },
   {
     "id": "054",
@@ -1146,8 +1199,9 @@
     "aspectRatio": 1,
     "order": 54,
     "featured": false,
+    "guideLevel": "silent",
     "duplicateOf": null,
-    "guideLevel": "silent"
+    "focusSrc": "/museum/focus/54.webp"
   },
   {
     "id": "055",
@@ -1166,8 +1220,9 @@
     "aspectRatio": 1,
     "order": 55,
     "featured": false,
+    "guideLevel": "silent",
     "duplicateOf": null,
-    "guideLevel": "silent"
+    "focusSrc": "/museum/focus/55.webp"
   },
   {
     "id": "056",
@@ -1186,8 +1241,9 @@
     "aspectRatio": 1,
     "order": 56,
     "featured": false,
+    "guideLevel": "silent",
     "duplicateOf": null,
-    "guideLevel": "silent"
+    "focusSrc": "/museum/focus/56.webp"
   },
   {
     "id": "057",
@@ -1206,8 +1262,9 @@
     "aspectRatio": 1,
     "order": 57,
     "featured": false,
+    "guideLevel": "silent",
     "duplicateOf": null,
-    "guideLevel": "silent"
+    "focusSrc": "/museum/focus/57.webp"
   },
   {
     "id": "058",
@@ -1226,8 +1283,9 @@
     "aspectRatio": 1,
     "order": 58,
     "featured": false,
+    "guideLevel": "silent",
     "duplicateOf": null,
-    "guideLevel": "silent"
+    "focusSrc": "/museum/focus/58.webp"
   },
   {
     "id": "059",
@@ -1246,8 +1304,9 @@
     "aspectRatio": 1,
     "order": 59,
     "featured": false,
+    "guideLevel": "silent",
     "duplicateOf": null,
-    "guideLevel": "silent"
+    "focusSrc": "/museum/focus/59.webp"
   },
   {
     "id": "060",
@@ -1266,8 +1325,9 @@
     "aspectRatio": 1,
     "order": 60,
     "featured": false,
+    "guideLevel": "silent",
     "duplicateOf": null,
-    "guideLevel": "silent"
+    "focusSrc": "/museum/focus/60.webp"
   },
   {
     "id": "061",
@@ -1286,8 +1346,9 @@
     "aspectRatio": 1,
     "order": 61,
     "featured": false,
+    "guideLevel": "silent",
     "duplicateOf": null,
-    "guideLevel": "silent"
+    "focusSrc": "/museum/focus/61.webp"
   },
   {
     "id": "062",
@@ -1306,8 +1367,9 @@
     "aspectRatio": 1,
     "order": 62,
     "featured": false,
+    "guideLevel": "silent",
     "duplicateOf": null,
-    "guideLevel": "silent"
+    "focusSrc": "/museum/focus/62.webp"
   },
   {
     "id": "063",
@@ -1326,8 +1388,9 @@
     "aspectRatio": 1,
     "order": 63,
     "featured": false,
+    "guideLevel": "silent",
     "duplicateOf": null,
-    "guideLevel": "silent"
+    "focusSrc": "/museum/focus/63.webp"
   },
   {
     "id": "064",
@@ -1346,8 +1409,9 @@
     "aspectRatio": 1,
     "order": 64,
     "featured": false,
+    "guideLevel": "silent",
     "duplicateOf": null,
-    "guideLevel": "silent"
+    "focusSrc": "/museum/focus/64.webp"
   },
   {
     "id": "065",
@@ -1366,8 +1430,9 @@
     "aspectRatio": 1,
     "order": 65,
     "featured": false,
+    "guideLevel": "silent",
     "duplicateOf": null,
-    "guideLevel": "silent"
+    "focusSrc": "/museum/focus/65.webp"
   },
   {
     "id": "066",
@@ -1386,8 +1451,9 @@
     "aspectRatio": 1,
     "order": 66,
     "featured": false,
+    "guideLevel": "silent",
     "duplicateOf": null,
-    "guideLevel": "silent"
+    "focusSrc": "/museum/focus/66.webp"
   },
   {
     "id": "067",
@@ -1406,8 +1472,9 @@
     "aspectRatio": 1,
     "order": 67,
     "featured": false,
+    "guideLevel": "silent",
     "duplicateOf": null,
-    "guideLevel": "silent"
+    "focusSrc": "/museum/focus/67.webp"
   },
   {
     "id": "068",
@@ -1426,8 +1493,9 @@
     "aspectRatio": 1,
     "order": 68,
     "featured": false,
+    "guideLevel": "silent",
     "duplicateOf": null,
-    "guideLevel": "silent"
+    "focusSrc": "/museum/focus/68.webp"
   },
   {
     "id": "069",
@@ -1446,8 +1514,9 @@
     "aspectRatio": 1,
     "order": 69,
     "featured": false,
+    "guideLevel": "silent",
     "duplicateOf": null,
-    "guideLevel": "silent"
+    "focusSrc": "/museum/focus/69.webp"
   },
   {
     "id": "070",
@@ -1466,8 +1535,9 @@
     "aspectRatio": 1,
     "order": 70,
     "featured": false,
+    "guideLevel": "silent",
     "duplicateOf": null,
-    "guideLevel": "silent"
+    "focusSrc": "/museum/focus/70.webp"
   },
   {
     "id": "071",
@@ -1486,8 +1556,9 @@
     "aspectRatio": 1,
     "order": 71,
     "featured": false,
+    "guideLevel": "silent",
     "duplicateOf": null,
-    "guideLevel": "silent"
+    "focusSrc": "/museum/focus/71.webp"
   },
   {
     "id": "072",
@@ -1506,8 +1577,9 @@
     "aspectRatio": 1,
     "order": 72,
     "featured": false,
+    "guideLevel": "silent",
     "duplicateOf": null,
-    "guideLevel": "silent"
+    "focusSrc": "/museum/focus/72.webp"
   },
   {
     "id": "073",
@@ -1526,8 +1598,9 @@
     "aspectRatio": 1,
     "order": 73,
     "featured": false,
+    "guideLevel": "silent",
     "duplicateOf": null,
-    "guideLevel": "silent"
+    "focusSrc": "/museum/focus/73.webp"
   },
   {
     "id": "074",
@@ -1546,8 +1619,9 @@
     "aspectRatio": 1,
     "order": 74,
     "featured": false,
+    "guideLevel": "silent",
     "duplicateOf": null,
-    "guideLevel": "silent"
+    "focusSrc": "/museum/focus/74.webp"
   },
   {
     "id": "075",
@@ -1566,8 +1640,9 @@
     "aspectRatio": 1,
     "order": 75,
     "featured": false,
+    "guideLevel": "silent",
     "duplicateOf": null,
-    "guideLevel": "silent"
+    "focusSrc": "/museum/focus/75.webp"
   },
   {
     "id": "076",
@@ -1586,8 +1661,9 @@
     "aspectRatio": 1,
     "order": 76,
     "featured": false,
+    "guideLevel": "silent",
     "duplicateOf": null,
-    "guideLevel": "silent"
+    "focusSrc": "/museum/focus/76.webp"
   },
   {
     "id": "077",
@@ -1606,8 +1682,9 @@
     "aspectRatio": 1,
     "order": 77,
     "featured": false,
+    "guideLevel": "silent",
     "duplicateOf": null,
-    "guideLevel": "silent"
+    "focusSrc": "/museum/focus/77.webp"
   },
   {
     "id": "078",
@@ -1626,8 +1703,9 @@
     "aspectRatio": 1,
     "order": 78,
     "featured": false,
+    "guideLevel": "silent",
     "duplicateOf": null,
-    "guideLevel": "silent"
+    "focusSrc": "/museum/focus/78.webp"
   },
   {
     "id": "079",
@@ -1646,8 +1724,9 @@
     "aspectRatio": 1,
     "order": 79,
     "featured": false,
+    "guideLevel": "silent",
     "duplicateOf": null,
-    "guideLevel": "silent"
+    "focusSrc": "/museum/focus/79.webp"
   },
   {
     "id": "080",
@@ -1666,8 +1745,9 @@
     "aspectRatio": 1,
     "order": 80,
     "featured": false,
+    "guideLevel": "silent",
     "duplicateOf": null,
-    "guideLevel": "silent"
+    "focusSrc": "/museum/focus/80.webp"
   },
   {
     "id": "081",
@@ -1686,8 +1766,9 @@
     "aspectRatio": 1,
     "order": 81,
     "featured": false,
+    "guideLevel": "silent",
     "duplicateOf": null,
-    "guideLevel": "silent"
+    "focusSrc": "/museum/focus/81.webp"
   },
   {
     "id": "082",
@@ -1706,8 +1787,9 @@
     "aspectRatio": 1,
     "order": 82,
     "featured": false,
+    "guideLevel": "silent",
     "duplicateOf": null,
-    "guideLevel": "silent"
+    "focusSrc": "/museum/focus/82.webp"
   },
   {
     "id": "083",
@@ -1726,8 +1808,9 @@
     "aspectRatio": 1,
     "order": 83,
     "featured": false,
+    "guideLevel": "silent",
     "duplicateOf": null,
-    "guideLevel": "silent"
+    "focusSrc": "/museum/focus/83.webp"
   },
   {
     "id": "084",
@@ -1746,8 +1829,9 @@
     "aspectRatio": 1,
     "order": 84,
     "featured": false,
+    "guideLevel": "silent",
     "duplicateOf": null,
-    "guideLevel": "silent"
+    "focusSrc": "/museum/focus/84.webp"
   },
   {
     "id": "085",
@@ -1766,8 +1850,9 @@
     "aspectRatio": 1,
     "order": 85,
     "featured": false,
+    "guideLevel": "silent",
     "duplicateOf": null,
-    "guideLevel": "silent"
+    "focusSrc": "/museum/focus/85.webp"
   },
   {
     "id": "086",
@@ -1786,8 +1871,9 @@
     "aspectRatio": 1,
     "order": 86,
     "featured": false,
+    "guideLevel": "silent",
     "duplicateOf": null,
-    "guideLevel": "silent"
+    "focusSrc": "/museum/focus/86.webp"
   },
   {
     "id": "087",
@@ -1806,8 +1892,9 @@
     "aspectRatio": 1,
     "order": 87,
     "featured": false,
+    "guideLevel": "silent",
     "duplicateOf": null,
-    "guideLevel": "silent"
+    "focusSrc": "/museum/focus/87.webp"
   },
   {
     "id": "088",
@@ -1826,8 +1913,9 @@
     "aspectRatio": 1,
     "order": 88,
     "featured": false,
+    "guideLevel": "silent",
     "duplicateOf": null,
-    "guideLevel": "silent"
+    "focusSrc": "/museum/focus/88.webp"
   },
   {
     "id": "089",
@@ -1846,8 +1934,9 @@
     "aspectRatio": 1,
     "order": 89,
     "featured": false,
+    "guideLevel": "silent",
     "duplicateOf": null,
-    "guideLevel": "silent"
+    "focusSrc": "/museum/focus/89.webp"
   },
   {
     "id": "090",
@@ -1866,8 +1955,9 @@
     "aspectRatio": 1,
     "order": 90,
     "featured": false,
+    "guideLevel": "silent",
     "duplicateOf": null,
-    "guideLevel": "silent"
+    "focusSrc": "/museum/focus/90.webp"
   },
   {
     "id": "091",
@@ -1886,8 +1976,9 @@
     "aspectRatio": 1,
     "order": 91,
     "featured": false,
+    "guideLevel": "silent",
     "duplicateOf": null,
-    "guideLevel": "silent"
+    "focusSrc": "/museum/focus/91.webp"
   },
   {
     "id": "092",
@@ -1906,8 +1997,9 @@
     "aspectRatio": 1,
     "order": 92,
     "featured": false,
+    "guideLevel": "silent",
     "duplicateOf": null,
-    "guideLevel": "silent"
+    "focusSrc": "/museum/focus/92.webp"
   },
   {
     "id": "093",
@@ -1926,8 +2018,9 @@
     "aspectRatio": 1,
     "order": 93,
     "featured": false,
+    "guideLevel": "silent",
     "duplicateOf": null,
-    "guideLevel": "silent"
+    "focusSrc": "/museum/focus/93.webp"
   },
   {
     "id": "094",
@@ -1946,8 +2039,9 @@
     "aspectRatio": 1,
     "order": 94,
     "featured": false,
+    "guideLevel": "silent",
     "duplicateOf": null,
-    "guideLevel": "silent"
+    "focusSrc": "/museum/focus/94.webp"
   },
   {
     "id": "095",
@@ -1966,8 +2060,9 @@
     "aspectRatio": 1,
     "order": 95,
     "featured": false,
+    "guideLevel": "silent",
     "duplicateOf": null,
-    "guideLevel": "silent"
+    "focusSrc": "/museum/focus/95.webp"
   },
   {
     "id": "096",
@@ -1986,8 +2081,9 @@
     "aspectRatio": 1,
     "order": 96,
     "featured": false,
+    "guideLevel": "silent",
     "duplicateOf": null,
-    "guideLevel": "silent"
+    "focusSrc": "/museum/focus/96.webp"
   },
   {
     "id": "097",
@@ -2006,8 +2102,9 @@
     "aspectRatio": 1,
     "order": 97,
     "featured": false,
+    "guideLevel": "silent",
     "duplicateOf": null,
-    "guideLevel": "silent"
+    "focusSrc": "/museum/focus/97.webp"
   },
   {
     "id": "098",
@@ -2026,8 +2123,9 @@
     "aspectRatio": 1,
     "order": 98,
     "featured": false,
+    "guideLevel": "silent",
     "duplicateOf": null,
-    "guideLevel": "silent"
+    "focusSrc": "/museum/focus/98.webp"
   },
   {
     "id": "099",
@@ -2046,8 +2144,9 @@
     "aspectRatio": 1,
     "order": 99,
     "featured": false,
+    "guideLevel": "silent",
     "duplicateOf": null,
-    "guideLevel": "silent"
+    "focusSrc": "/museum/focus/99.webp"
   },
   {
     "id": "100",
@@ -2066,7 +2165,8 @@
     "aspectRatio": 1,
     "order": 100,
     "featured": false,
+    "guideLevel": "silent",
     "duplicateOf": null,
-    "guideLevel": "silent"
+    "focusSrc": "/museum/focus/100.webp"
   }
 ]

@@ -8,8 +8,8 @@ Run `node scripts/inventory-museum.cjs` after adding numbered artwork files to `
 
 ## Controls
 
-- Enter approaches the mansion, opens the doors, introduces RayCat, and proceeds into the hall.
-- Scroll approaches artwork. Drag changes the viewing direction. Explore enables bounded WASD movement. Touch vertical dragging advances the camera.
+- The Museum starts automatically on /museum; returning visitors can use SKIP INTRO.
+- Scroll approaches artwork. Drag horizontally rotates the view continuously through 360 degrees. Explore enables bounded WASD movement. Touch vertical dragging advances the camera.
 - Rooms and the physical hall doors select wings. Collection locates all 100 works without loading their textures.
 - Select artwork to inspect it. Arrow keys and Previous/Next navigate within its wing. Escape closes focus. View in Room returns to its wall.
 - `/museum?room=digital` and `/museum?art=016` open shareable states.
@@ -19,7 +19,7 @@ Run `node scripts/inventory-museum.cjs` after adding numbered artwork files to `
 
 ## Loading and cleanup
 
-Only the current room's six works load. Low quality uses thumbnails; normal quality uses room derivatives. Focus uses the original through Next Image. Old room geometry, materials, and textures are disposed, including textures whose asynchronous loads finish after leaving the room. Surface textures are shared per color within each room. Reduced motion removes camera easing and entry animation.
+Only the current room's six works load. Low quality uses thumbnails; normal quality uses room derivatives. Focus uses the optimized focus WebP derivative through Next Image. Old room geometry, materials, and textures are disposed, including textures whose asynchronous loads finish after leaving the room. Surface textures are shared per color within each room. Reduced motion removes camera easing and entry animation.
 
 ## Validation
 

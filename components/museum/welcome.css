@@ -1,7 +1,6 @@
-.museum-welcome{inset:auto 0 18%;font-family:Montserrat,Arial,sans-serif;font-size:clamp(18px,2vw,25px);font-weight:400;letter-spacing:.015em;color:#E8E0CF;pointer-events:none;animation:owner-greeting 7s both}
+.museum-welcome{inset:auto 0 18%;font-family:Montserrat,Arial,sans-serif;font-size:clamp(18px,2vw,25px);font-weight:400;letter-spacing:.015em;color:#F5F8FF;pointer-events:none;animation:owner-greeting 7s both}
 .museum-welcome p{margin:0}
-.museum-owner-fallback{position:absolute;inset:0;background:radial-gradient(ellipse at 53% 65%,#79512e66,transparent 45%),#100d09bb;display:grid;place-items:center;pointer-events:none}
-.museum-owner-fallback img{width:auto;height:30vh;max-width:65vw;object-fit:contain;transform:translate(7vw,8vh);filter:drop-shadow(0 12px 10px #0008)}
-@keyframes owner-greeting{0%,30%{opacity:0}43%,67%{opacity:1}85%,100%{opacity:0}}
+.museum-owner-fallback{position:absolute;inset:0;background:radial-gradient(ellipse at 53% 65%,#1d4e6a55,transparent 45%),#08101cbb;display:grid;place-items:center;pointer-events:none}
+.museum-owner-fallback img{width:auto;height:30vh;max-width:65vw;object-fit:contain;transform:translate(7vw,8vh)}
 @media(max-width:700px){.museum-welcome{bottom:20%}.museum-owner-fallback img{height:26vh;transform:translate(4vw,5vh)}}
 @media(prefers-reduced-motion:reduce){.museum-welcome{animation:none}}

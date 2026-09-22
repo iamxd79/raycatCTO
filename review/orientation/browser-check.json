@@ -14,12 +14,22 @@
         "transform": "none"
       },
       {
-        "src": "http://localhost:3000/_next/image?url=%2Fimages%2Fraycat%2Fcanonical-corrected.webp&w=384&q=75",
+        "src": "http://localhost:3000/_next/image?url=%2Fimages%2Fraycat%2Fcanonical-corrected.webp&w=640&q=75",
         "loaded": true,
-        "transform": "matrix(0.999391, 0.0348995, -0.0348995, 0.999391, 0, 0)"
+        "transform": "none"
       },
       {
-        "src": "http://localhost:3000/_next/image?url=%2Fimages%2Fraycat%2Fcanonical-corrected.webp&w=640&q=75",
+        "src": "http://localhost:3000/_next/image?url=%2Fimage%2F05-raycat-savings-and-loan.png&w=640&q=75",
+        "loaded": true,
+        "transform": "none"
+      },
+      {
+        "src": "http://localhost:3000/_next/image?url=%2Fimage%2F06-the-ray-factory.png&w=640&q=75",
+        "loaded": true,
+        "transform": "none"
+      },
+      {
+        "src": "http://localhost:3000/_next/image?url=%2Fimage%2F04-the-cat-pays-rent.png&w=640&q=75",
         "loaded": true,
         "transform": "none"
       },
@@ -31,7 +41,7 @@
       {
         "src": "http://localhost:3000/_next/image?url=%2Fimage%2F49-the-museum-of-raycat.png&w=750&q=75",
         "loaded": true,
-        "transform": "matrix(0.99863, -0.052336, 0.052336, 0.99863, 0, 0)"
+        "transform": "none"
       }
     ]
   },
@@ -68,10 +78,20 @@
       {
         "src": "http://localhost:3000/_next/image?url=%2Fimages%2Fraycat%2Fcanonical-corrected.webp&w=384&q=75",
         "loaded": true,
-        "transform": "matrix(0.999391, 0.0348995, -0.0348995, 0.999391, 0, 0)"
+        "transform": "none"
       },
       {
-        "src": "http://localhost:3000/_next/image?url=%2Fimages%2Fraycat%2Fcanonical-corrected.webp&w=384&q=75",
+        "src": "http://localhost:3000/_next/image?url=%2Fimage%2F05-raycat-savings-and-loan.png&w=384&q=75",
+        "loaded": true,
+        "transform": "none"
+      },
+      {
+        "src": "http://localhost:3000/_next/image?url=%2Fimage%2F06-the-ray-factory.png&w=384&q=75",
+        "loaded": true,
+        "transform": "none"
+      },
+      {
+        "src": "http://localhost:3000/_next/image?url=%2Fimage%2F04-the-cat-pays-rent.png&w=384&q=75",
         "loaded": true,
         "transform": "none"
       },
@@ -83,7 +103,7 @@
       {
         "src": "http://localhost:3000/_next/image?url=%2Fimage%2F49-the-museum-of-raycat.png&w=384&q=75",
         "loaded": true,
-        "transform": "matrix(0.99863, -0.052336, 0.052336, 0.99863, 0, 0)"
+        "transform": "none"
       }
     ]
   },

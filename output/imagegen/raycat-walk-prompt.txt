@@ -1,0 +1,7 @@
+Use case: stylized-concept
+Asset type: eight-frame walk-cycle sprite sheet for the RayCat Museum guide.
+Input image: exact identity and costume reference, not the output layout.
+Create ONE sheet with exactly 8 complete full-body poses in a regular 4-column by 2-row grid. Each cell is 512x768 on a 2048x1536 canvas. No grid lines or labels. Center each character at the same relative position in each cell; same scale, same camera, same baseline, generous margins for ears and tail.
+The character is the reference tabby cat, amber eyes, burgundy velvet long smoking jacket, cream cuffs, purple-blue cravat, dark slippers. Keep the face, proportions, fur markings, rich vintage painted detail and costume consistent across all eight frames. No helmet. No added props.
+Three-quarter side view facing screen right. Calm dignified WALK IN PLACE, anatomically different leg and arm positions across all eight frames. Reading left to right, top row then bottom row: left contact, left down, left passing, left up, right contact, right down, right passing, right up. Opposing arms swing gently, feet lift and plant, mild natural coat and tail follow-through. Frame eight loops into frame one. No camera changes or character scaling. Both feet visible, full tail within each cell.
+Background is perfectly uniform saturated green #00FF00 in every pixel outside the character. No green on the character. No shadow, ground, scenery, text, watermark, checkerboard, frame borders or gradients. This flat background will be removed for a transparent sprite atlas.
